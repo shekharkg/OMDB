@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?><!--  Created by shekhar on 2019-09-07.-->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:id="@+id/main"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  tools:context=".ui.main.MainFragment">
+
+  <include
+    android:id="@+id/errorViewContainer"
+    layout="@layout/error_layout"
+    android:visibility="gone" />
+
+  <include
+    android:id="@+id/noResultViewContainer"
+    layout="@layout/empty_layout"
+    android:visibility="gone" />
+
+  <androidx.recyclerview.widget.RecyclerView
+    android:id="@+id/moviesRV"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" />
+
+  <ProgressBar
+    android:id="@+id/progressBar"
+    android:layout_width="@dimen/dimen_progressbar"
+    android:layout_height="@dimen/dimen_progressbar"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="@+id/moviesRV"
+    app:layout_constraintTop_toTopOf="@+id/moviesRV" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

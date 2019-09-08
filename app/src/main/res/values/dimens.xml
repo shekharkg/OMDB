@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="text_header">20sp</dimen>
+    <dimen name="padding_regular">8dp</dimen>
+    <dimen name="margin_regular">16dp</dimen>
+    <dimen name="card_elevation">10dp</dimen>
+    <dimen name="card_corner_radius">12dp</dimen>
+    <dimen name="text_title">20sp</dimen>
+    <dimen name="poster_height">180dp</dimen>
+    <dimen name="text_small">16sp</dimen>
+    <dimen name="dimen_progressbar">80dp</dimen>
+    <dimen name="dimen_progressbar_small">24dp</dimen>
+</resources>

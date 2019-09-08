@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?><!--  Created by shekhar on 2019-09-07.-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:orientation="vertical"
+  android:padding="@dimen/padding_regular">
+
+  <androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    app:cardElevation="@dimen/card_elevation">
+
+    <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="vertical"
+      android:padding="@dimen/padding_regular">
+
+      <ImageView
+        android:id="@+id/posterIV"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/poster_height"
+        android:contentDescription="@string/desc_poster" />
+
+      <ProgressBar
+        android:id="@+id/progressBarSmall"
+        android:layout_width="@dimen/dimen_progressbar_small"
+        android:layout_height="@dimen/dimen_progressbar_small"
+        android:layout_centerInParent="true"/>
+
+      <TextView
+        android:id="@+id/movieTitleTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/posterIV"
+        android:fontFamily="@font/aldrich"
+        android:padding="@dimen/padding_regular"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/text_title" />
+
+      <TextView
+        android:id="@+id/movieYearTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/movieTitleTV"
+        android:fontFamily="@font/aldrich"
+        android:gravity="end"
+        android:paddingStart="@dimen/padding_regular"
+        android:paddingEnd="@dimen/padding_regular"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="@dimen/text_small"
+        android:textStyle="bold" />
+
+    </RelativeLayout>
+
+
+  </androidx.cardview.widget.CardView>
+
+</LinearLayout>

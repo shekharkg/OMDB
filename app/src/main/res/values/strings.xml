@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Omdb</string>
+
+
+    <string name="text_error_message">Unable to connect to INTERNET.</string>
+    <string name="title_retry">Retry!</string>
+    <string name="text_no_result_found">No results found!</string>
+    <string name="desc_poster">Poster</string>
+    <string name="search_hint">Search Movie</string>
+</resources>
